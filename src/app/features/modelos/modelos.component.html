@@ -1,0 +1,22 @@
+<!-- Banner -->
+<section class="banner">
+    <div class="banner-content">
+        <h1 class="titulo-seccion">Modelos de Calidad de Software</h1>
+        <p>Explora los modelos que guían la gestión y evaluación de la calidad de software en entornos profesionales.</p>
+    </div>
+</section>
+
+<!-- Features / Cards de Modelos -->
+<section class="features">
+    <div class="feature-card" *ngFor="let modelo of modelos" (click)="goTo(modelo.link)">
+        <i class="icon {{ modelo.icon }}"></i>
+        <h3>{{ modelo.title }}</h3>
+        <p>{{ modelo.description }}</p>
+        <button class="btn-ver-mas">Ver más</button>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2025 EduQuality · Proyecto académico sobre calidad del software</p>
+</footer>

@@ -1,0 +1,23 @@
+
+<!-- Banner -->
+<section class="banner">
+  <div class="banner-content">
+        <h1 class="titulo-seccion">Estándares de Calidad de Software</h1>
+        <p>Descubre los estándares que aseguran la calidad y buenas prácticas en el desarrollo de software.</p>
+    </div>
+</section>
+
+<!-- Features / Cards de Estándares -->
+<section class="features">
+  <div class="feature-card" *ngFor="let estandar of estandares" (click)="goTo(estandar.link)">
+    <i class="icon {{ estandar.icon }}"></i>
+    <h3>{{ estandar.title }}</h3>
+    <p>{{ estandar.description }}</p>
+    <button class="btn-ver-mas">Ver más</button>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2025 EduQuality · Proyecto académico sobre calidad del software</p>
+</footer>

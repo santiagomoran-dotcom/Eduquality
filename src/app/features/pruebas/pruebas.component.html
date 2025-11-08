@@ -1,0 +1,22 @@
+<!-- Banner -->
+<section class="banner">
+  <div class="banner-content">
+    <h1>Pruebas de Calidad de Software</h1>
+    <p>Evalúa la calidad de software mediante pruebas funcionales, unitarias y de integración.</p>
+  </div>
+</section>
+
+<!-- Features / Cards de Pruebas -->
+<section class="features">
+  <div class="feature-card" *ngFor="let prueba of pruebas" (click)="goTo(prueba.link)">
+    <i class="icon {{ prueba.icon }}"></i>
+    <h3>{{ prueba.title }}</h3>
+    <p>{{ prueba.description }}</p>
+    <button class="btn-ver-mas">Ver más</button>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2025 EduQuality · Proyecto académico sobre calidad del software</p>
+</footer>

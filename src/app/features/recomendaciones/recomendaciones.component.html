@@ -1,0 +1,22 @@
+<!-- Banner -->
+<section class="banner">
+    <div class="banner-content">
+        <h1>Recomendaciones de Calidad de Software</h1>
+        <p>Consejos y buenas prácticas para mejorar la calidad de tus proyectos de software.</p>
+    </div>
+</section>
+
+<!-- Recomendaciones -->
+<section class="features">
+    <div class="feature-card" *ngFor="let rec of recomendaciones">
+        <i class="icon {{ rec.icon }}"></i>
+        <h3>{{ rec.title }}</h3>
+        <p>{{ rec.description }}</p>
+        <button class="btn-ver-mas">Ver más</button>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2025 EduQuality · Proyecto académico sobre calidad del software</p>
+</footer>

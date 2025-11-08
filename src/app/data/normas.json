@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nombre": "ISO/IEC 25010",
+    "descripcion": "Define las características de calidad del software como usabilidad, fiabilidad y mantenibilidad.",
+    "beneficios": [
+      "Facilita la evaluación objetiva del software",
+      "Mejora la satisfacción del usuario final"
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "ISO/IEC 12207",
+    "descripcion": "Describe los procesos del ciclo de vida del software.",
+    "beneficios": [
+      "Estandariza la gestión de proyectos",
+      "Reduce errores en etapas tempranas"
+    ]
+  }
+]

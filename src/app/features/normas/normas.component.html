@@ -1,0 +1,22 @@
+<!-- Banner -->
+<section class="banner">
+  <div class="banner-content">
+    <h1 class="titulo-seccion">Normas de Calidad del Software</h1>
+    <p>Conoce las normas que guían las buenas prácticas en el desarrollo de software educativo y profesional.</p>
+  </div>
+</section>
+
+<!-- Features / Cards de Normas con enlaces funcionales -->
+<section class="features">
+  <div class="feature-card" *ngFor="let norma of normas" (click)="abrirEnlace(norma.enlace)">
+    <i class="icon {{ norma.icono }}"></i>
+    <h3>{{ norma.titulo }}</h3>
+    <p>{{ norma.descripcion }}</p>
+    <button class="btn-ver-mas">Ver más</button>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2025 EduQuality · Proyecto académico sobre calidad del software</p>
+</footer>
